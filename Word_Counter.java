@@ -2,7 +2,7 @@ package CodSoft;
 
 import java.util.*;
 
-public class Task2 {
+public class Word_Counter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your text or line");
@@ -24,6 +24,6 @@ public class Task2 {
         }
 
         System.out.println("Word count: " + wordCount);
-        System.out.println("Unque words are : " + unique);
+        System.out.println("Unique words are : " + unique);
     }
 }
