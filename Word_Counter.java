@@ -11,19 +11,17 @@ public class Word_Counter {
         HashSet<String> set = new HashSet<>();
 
         int wordCount = 0;
-        int unique = 0;
 
         for (String word : words) {
 
-            if (set.contains(word)) {
-                unique++;
-            } else {
-                set.add(word);
+            if (!word.isEmpty()) {
+                wordCount++;
+                set.add(word.toLowerCase());
             }
-            wordCount++;
+
         }
 
         System.out.println("Word count: " + wordCount);
-        System.out.println("Unique words are : " + unique);
+        System.out.println("Unique words are : " + set.size());
     }
 }
