@@ -3,7 +3,7 @@ package CodSoft;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task1 {
+public class Number_game {
     public static void main(String[] args) {
 
         Random rand = new Random();
