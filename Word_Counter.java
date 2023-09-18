@@ -3,6 +3,7 @@ package CodSoft;
 import java.util.*;
 
 public class Word_Counter {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your text or line");
