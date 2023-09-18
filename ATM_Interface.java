@@ -55,7 +55,6 @@ class ATM {
     public static double getUserInputAmount(String prompt) {
         Scanner scanner = new Scanner(System.in);
         double amount;
-
         while (true) {
             System.out.print(prompt);
             if (scanner.hasNextDouble()) {
@@ -67,7 +66,7 @@ class ATM {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid number.");
-                scanner.next(); // Clear the invalid input
+                scanner.next();
             }
         }
 
@@ -98,7 +97,7 @@ class ATM {
     }
 
     public static void main(String[] args) {
-        BankAccount userAccount = new BankAccount(1000.0); // Initial balance of $1000
+        BankAccount userAccount = new BankAccount(1000.0);
         ATM atm = new ATM(userAccount);
         Scanner scanner = new Scanner(System.in);
 
